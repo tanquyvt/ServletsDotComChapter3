@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>ServletsDotComChapter3</display-name>
+	<servlet>
+		<servlet-name>simple</servlet-name>
+		<servlet-class>com.servlets.ch03.SimpleCounter</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>holistic</servlet-name>
+		<servlet-class>com.servlets.ch03.HolisticCounter</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>holistic2</servlet-name>
+		<servlet-class>com.servlets.ch03.HolisticCounter</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>simple</servlet-name>
+		<url-pattern>/simple</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>holistic</servlet-name>
+		<url-pattern>/holistic</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>holistic2</servlet-name>
+		<url-pattern>/holistic2</url-pattern>
+	</servlet-mapping>
+</web-app>
